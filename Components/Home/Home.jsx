@@ -38,24 +38,50 @@ function Home() {
 
   return (
     <>
-      <div className="ain" style={{ display: "flex" }}>
-        <div>username :{data.username}</div>
-        <div>username :{data._id}</div>
+      <div className="ain">
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          Username :{" "}
+          <input type="text" style={{ width: "20%" }} value={data.username} />
+        </div>
+        {/* <div>username :{data._id}</div> */}
 
-        <div style={{ marginLeft: "10vw" }}>email :{data.email}</div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          Email :{" "}
+          <input
+            type="text"
+            value={data.email}
+            style={{ width: "20%" }}
+          ></input>
+        </div>
         {/* <div style={{ marginLeft: "10vw" }}>email :{data.email}</div> */}
       </div>
-      <div className="change">
-        <button onClick={handlechange}>For Change in details Click here</button>
+      <div
+        className="change"
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <button
+          onClick={handlechange}
+          style={{ width: "200px", marginLeft: "0%" }}
+        >
+          For Change in details Click here
+        </button>
       </div>
-      {/* <div>username :{data.ProfileDetails}</div> */}
-
-      {/* <div> username :{data.ProfileDetails}</div> */}
-      {/* <div>
-        {Object.entries(data.ProfileDetails).map(([key, value]) => (
-          <div key={key}>{`${key}: ${value}`}</div>
-        ))}
-      </div> */}
     </>
   );
 }

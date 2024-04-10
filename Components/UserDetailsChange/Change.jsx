@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import axios from "axios";
+import RegistrationForm from "./RegistrationForm";
 
 // import UserContext from "../../Context/Usercontext";
 function Change() {
@@ -99,6 +100,7 @@ function Change() {
       </div>
       <div>{dataa.message}</div>
       <div>{err}</div>
+      <RegistrationForm />
     </>
   );
 }
