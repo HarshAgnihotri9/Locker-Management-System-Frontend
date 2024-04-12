@@ -17,8 +17,11 @@ function RegistrationForm() {
 
   useEffect(() => {
     (async () => {
-      const token = localStorage.getItem("jwtToken");
+      const token = document.cookie.split("=")[1];
       console.log(token);
+      if (token == undefined) {
+        navigate("/login");
+      }
       try {
         const response = await axios.get("/api/user/profile", {
           headers: {
@@ -68,12 +71,23 @@ function RegistrationForm() {
         // navigate("/login");
       });
   };
+  useEffect(() => {
+    if (dataa.message == "Update Done") {
+      setTimeout(() => {
+        navigate("/login");
+      }, [5000]);
+    }
+  });
 
   return (
     <div className="container">
       <h2>Form for Details Changing</h2>
       <form
-        style={{ backgroundColor: "white", height: "500px", marginTop: "30px" }}
+        style={{
+          backgroundColor: "white",
+          height: "500px",
+          marginTop: "90px",
+        }}
         onSubmit={handleclick}
       >
         <div className="form-group">

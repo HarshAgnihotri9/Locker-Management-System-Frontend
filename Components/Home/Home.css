@@ -1,0 +1,22 @@
+.ain div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#input {
+  width: 20%;
+}
+
+@media screen and (max-width: 400px) {
+  .ain div {
+    justify-content: flex-start;
+  }
+  #input {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #input {
+    width: 150px;
+  }
+}

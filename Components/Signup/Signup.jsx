@@ -67,10 +67,10 @@ function Signup() {
     <>
       <div className="main">
         <div className="background">
-          <div className="shape"></div>
-          <div className="shape"></div>
+          {/* <div className="shape"></div> */}
+          {/* <div className="shape"></div> */}
         </div>
-        <form onSubmit={handleclick} style={{ height: "750px" }}>
+        <form onSubmit={handleclick} style={{ height: "700px" }}>
           <h3>SignUp Here</h3>
 
           <label htmlFor="username">Username</label>

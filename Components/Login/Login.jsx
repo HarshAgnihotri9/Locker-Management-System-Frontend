@@ -78,8 +78,8 @@ function Login() {
     <>
       <div className="main">
         <div className="background">
-          <div className="shape"></div>
-          <div className="shape"></div>
+          {/* <div className="shape"></div> */}
+          {/* <div className="shape"></div> */}
         </div>
         <form onSubmit={Handleclick} style={{ height: "600px" }}>
           <h3>LoginUp Here</h3>

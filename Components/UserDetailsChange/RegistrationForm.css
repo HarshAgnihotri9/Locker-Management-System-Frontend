@@ -62,3 +62,9 @@ input[type="submit"]:hover {
     width: 90%;
   }
 }
+
+@media screen and (max-width: 424px) {
+  form {
+    width: 250px;
+  }
+}
