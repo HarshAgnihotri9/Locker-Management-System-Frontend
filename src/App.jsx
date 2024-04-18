@@ -13,7 +13,8 @@ import LoginAdmin from "../Components/LoginAdmin/LoginAdmin";
 import Admin from "../Components/Adminn/Admin";
 import Change from "../Components/UserDetailsChange/Change";
 import RegistrationForm from "../Components/UserDetailsChange/RegistrationForm";
-import Logout from "../Components/logout/logout";
+import ForgetPassword from "../Components/ForgetPassword/ForgetPassword";
+// import Logout from "../Components/logout/logout";
 // import Home2 from "../Components/Home/Home2";
 
 function App() {
@@ -24,12 +25,13 @@ function App() {
           <Route path="/" element={<Signup />} />
 
           <Route path="/login" element={<Login />} />
-          <Route path="/logout" element={<Logout />} />
+          {/* <Route path="/logout" element={<Logout />} /> */}
 
           <Route path="/home2" element={<Home />} />
           <Route path="/SignUpAdmin" element={<SignUpAdmin />} />
           <Route path="/Admin" element={<Admin />} />
           <Route path="/Change" element={<RegistrationForm />} />
+          <Route path="/forgetpassword" element={<ForgetPassword />} />
 
           <Route path="/LoginAdmin" element={<LoginAdmin />} />
         </Routes>

@@ -74,6 +74,10 @@ function Login() {
     e.preventDefault();
     navigate("/");
   };
+  const handlepassword = (e) => {
+    e.preventDefault();
+    navigate("/forgetpassword");
+  };
   return (
     <>
       <div className="main">
@@ -81,7 +85,7 @@ function Login() {
           {/* <div className="shape"></div> */}
           {/* <div className="shape"></div> */}
         </div>
-        <form onSubmit={Handleclick} style={{ height: "600px" }}>
+        <form onSubmit={Handleclick} style={{ height: "650px" }}>
           <h3>LoginUp Here</h3>
 
           <label htmlFor="username">Username</label>
@@ -111,6 +115,10 @@ function Login() {
           <button onClick={handleAdmin} style={{ marginTop: "10px" }}>
             {" "}
             Admin Login
+          </button>
+          <button onClick={handlepassword} style={{ marginTop: "10px" }}>
+            {" "}
+            forget Password
           </button>
           <div className="error">
             <h2>{error}</h2>

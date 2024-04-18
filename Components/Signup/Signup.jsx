@@ -112,6 +112,7 @@ function Signup() {
             {" "}
             Admin Login
           </button>
+
           <div className="error">
             <h2>{error}</h2>
           </div>
